@@ -63,7 +63,7 @@ const Navigation = () => {
           },
         }}
       >
-        <List sx={{ marginTop: '20%' }}>
+        <List sx={{ marginTop: '20%', marginLeft: '20%' }}>
           {menuItems.map((item) => (
             <ListItem button key={item.id} component={Link} to={item.path}>
               <ListItemText primary={item.text} />
