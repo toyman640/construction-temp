@@ -1,3 +1,12 @@
 .MenuItems {
   margin-top: 20%;
 }
+
+.FirstName {
+  border: 1px solid red;
+}
+
+.CardContent {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,10 +1,9 @@
 import React from 'react';
+import FirstSection from './SectionFragments/FirstSection';
 
 const MainSection = () => (
   <div>
-    <h2>
-      MainSection
-    </h2>
+    <FirstSection />
   </div>
 );
 

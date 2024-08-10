@@ -13,23 +13,23 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary,
   height: '100%',
+  width: '100%',
 }));
 
 const MainContainer = () => (
   <Box
     sx={{
-      flexGrow: 1, width: '100%', height: '100vh', overflow: 'hidden',
+      flexGrow: 1, width: '100%', height: '100vh', overflow: 'hidden', display: 'flex',
     }}
   >
     <Grid item container spacing={0} columns={16}>
-      <Grid item lg={2} xs={2} sx={{ display: { xs: 'none', lg: 'block' } }}>
+      <Grid item lg={4} xs={2} sx={{ display: { xs: 'none', lg: 'block' } }} className="FirstName">
         <Item><Navigation /></Item>
       </Grid>
-      <Grid item lg={14} xs={14}>
+      <Grid item lg={12} xs={14}>
         <Item><MainSection /></Item>
       </Grid>
     </Grid>
-    <Navigation />
   </Box>
 );
 

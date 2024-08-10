@@ -58,7 +58,8 @@ const Navigation = () => {
         variant={isLargeScreen ? 'persistent' : 'temporary'}
         sx={{
           '& .MuiDrawer-paper': {
-            width: 240,
+            border: '1px solid red',
+            // width: { xs: '240px', lg: '50%' },
             boxSizing: 'border-box',
           },
         }}
