@@ -16,14 +16,15 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const MainContainer = () => (
   <Box sx={{ flexGrow: 1 }}>
-    <Grid container spacing={0} columns={16}>
-      <Grid item lg={4}>
+    <Grid item container spacing={0} columns={16}>
+      <Grid item lg={4} xs={4} sx={{ display: { xs: 'none', lg: 'block' } }}>
         <Item><Navigation /></Item>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item lg={12} xs={16}>
         <Item><MainSection /></Item>
       </Grid>
     </Grid>
+    <Navigation />
   </Box>
 );
 
