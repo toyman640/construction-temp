@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ProgressChart from './ProgrssChart';
 import TaskTable from './TaskTable';
+import ProjectDetails from './ProjectDetails';
 
 const SecondSection = () => (
   <Container className="mt-5">
@@ -21,8 +22,8 @@ const SecondSection = () => (
         <Card className="mt-4">
           <Card.Body>
             <Row>
-              <Card.Title>Project Progress</Card.Title>
-              <ProgressChart />
+              <Card.Title>Project Info</Card.Title>
+              <ProjectDetails />
             </Row>
           </Card.Body>
         </Card>
