@@ -23,10 +23,10 @@ const MainContainer = () => (
     }}
   >
     <Grid item container spacing={0} columns={16}>
-      <Grid item lg={4} xs={2} sx={{ display: { xs: 'none', lg: 'block' } }} className="FirstName">
+      <Grid item lg={4} md={4} xs={0} sx={{ display: { xs: 'block', lg: 'block' } }}>
         <Item><Navigation /></Item>
       </Grid>
-      <Grid item lg={12} xs={14}>
+      <Grid item lg={12} md={12} xs={16}>
         <Item><MainSection /></Item>
       </Grid>
     </Grid>
